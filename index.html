@@ -1,0 +1,332 @@
+<!DOCTYPE HTML>
+<!--
+	Academic webpage for Christopher L. Dean at MIT CSAIL
+-->
+<html>
+	<head>
+		<title>Christopher L. Dean</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script type="text/javascript">
+		 function showhide(id) {
+		    var e = document.getElementById(id);
+		    e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+		 }
+		</script>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63769426-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
+/**
+* Function that tracks a click on an outbound link in Google Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label.
+*/
+
+var trackClickType = function(url, type) {
+    ga('send', 'event', type, 'click', url, {'hitCallback':
+     function () {
+     document.location = url;
+     }
+   });
+}
+
+// var trackCODEdownload = function(url) {
+// 	trackClickType(url, 'code download');
+// }
+
+var trackPDFview = function(url) {
+	trackClickType(url, 'pdf view');
+}
+
+// var trackBIBview = function(url) {
+// 	trackClickType(url, 'bibtex view');
+// }
+
+// var trackSUPPMATview = function(url) {
+// 	trackClickType(url, 'supp mat view');
+// }
+
+// var trackMISCview = function(url) {
+// 	trackClickType(url, 'misc view');
+// }
+
+// var trackVIDEOview = function(url) {
+// 	trackClickType(url, 'video view');
+// }
+</script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body class="landing">
+		<!-- Header -->
+			<header id="header" class="alt">
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html#">Home</a></li>
+						<li><a href="index.html#edu">Education</a></li>
+						<li><a href="index.html#res">Research</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="container 75%">
+					<div class="row">
+						<div class="12u$" style="padding-bottom:1.5em;">
+							<div class="image rounded"><img src="images/me.jpg" alt="" /></div>
+							<header>
+								<h2>Christopher L. Dean</h2>
+								<p>MIT CSAIL Ph.D. Candidate <br />
+								<p>cdean [at] csail.mit.edu </p>
+							</header>
+						</div>
+					</div>
+					<div class="row">
+						<div class="10u$ -1u 12u$(small)">
+							<p>I am a Ph.D. candidate in the Computer Science and Artificial Intelligence Laboratory (<a href="http://csail.mit.edu/">CSAIL</a>) at <a href="http://www.mit.edu/">MIT</a>.
+								I work with <a href="http://people.csail.mit.edu/fisher/">John W. Fisher III</a> in the Sensing, Learning, and Inference (<a href="http://groups.csail.mit.edu/vision/sli/">SLI</a>) group.
+							My research is at the intersection of structured probabilistic models and deep learning, with the goal of multi-modal data fusion that is scalable, interpretable, and explainable.</p>
+							<a href="files/cv.pdf" onclick=" trackPDFview('http://people.csail.mit.edu/cdean/files/cv.pdf')" class="button special icon fa-download small">C.V.</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="edu" class="wrapper style2">
+				<div class="container 75%">
+					<header class="major special">
+						<h2>Education</h2>
+					</header>
+					<div class="row">
+						<div class="11u -1u 12u$(large)">
+							Ph.D. Electrical Engineering and Computer Science, <strong><a href="http://www.mit.edu/">Massachusetts Institute of Technology</a></strong> (Expected Spring 2022)
+							<ul></ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="11u -1u 12u$(large)">
+							S.M. Electrical Engineering and Computer Science, <strong><a href="http://www.mit.edu/">Massachusetts Institute of Technology</a></strong> (2015)
+							<ul>
+								<li>Irwin Mark Jacobs and Joan Klein Jacobs Presidential Fellowship (2013)</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="11u -1u 12u$(large)">
+							B.S. Computer Science and Engineering, <strong><a href="http://www.osu.edu/">The Ohio State University</a></strong> (2012)
+							<br /> <em>Graduated Summa Cum Laude with Honors Research Distinction in Electrical and Computer Engineering</em>
+							<ul>
+								<li>Undergraduate Research Scholarship (2012)</li>
+								<li>Warren G. and James M. Elliott Engineering Scholarship (2011 & 2012)</li>
+								<li>Crowe Horwath Scholarship (2011)</li>
+								<li>TechTomorrow Scholarship (2010)</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section id="res" class="wrapper style1">
+				<div class="container 75%">
+					<header class="major special">
+						<h2>Research</h2>
+					</header>
+					<p class="special">My current research interests span computer vision, interpretable machine learning, and Bayesian non-parametric models.  My recent work explores the intersection of probabilistic graphical models and deep learning methods.</p>
+					<hr />
+				</div>
+				<div class="container 75%">
+					<header class="major special">
+						<h3>Industry Experience</h3>
+					</header>
+					<div class="row">
+						<div class="11u -1u 12u$(large)">
+							<strong><a href="http://www.apple.com/">Apple Inc.</a></strong>, Cupertino, CA
+							<ul>
+								<li>Siri, Intern (Summer 2017)</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="11u -1u 12u$(large)">
+							<strong><a href="http://www.google.com/">Google Inc.</a></strong>, Mountain View, CA
+							<ul>
+								<li>Google Photos, Software Engineering Intern (Summer 2016)</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="11u -1u 12u$(large)">
+							<strong><a href="http://www.stresearch.com/">Systems &amp; Technology Research</a></strong>, Woburn, MA
+							<ul>
+								<li>Control and Estimation Systems Group, Intern (Summer 2015)</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="11u -1u 12u$(large)">
+							<strong><a href="http://www.ll.mit.edu/">MIT Lincoln Laboratory</a></strong>, Lexington, MA
+							<ul>
+								<li>Surveillance Systems Group, Co-op (Spring &amp; Summer 2013)</li>
+								<li>Embedded and Open Systems Group, Intern (Summer 2011)</li>
+							</ul>
+						</div>
+					</div>
+					<hr />
+				</div>
+				<div id="pubs" class="container 75%">
+					<header class="major special">
+						<h3>List of Publications</h3>
+					</header>
+					<div class="feature-grid">
+						<div class="feature">
+							<div class="image"><img src="images/dean2020lightweight_im.png" alt="" /></div>
+							<div class="content">
+								<header>
+									<h4>Lightweight Data Fusion with Conjugate Mappings</h4>
+									<p>Christopher L. Dean, Stephen J. Lee, Jason Pacheco, John W. Fisher III<br />
+									   Preprint: <a href="https://arxiv.org/abs/2011.10607">arXiv:2011.10607</a> (2020)</p>
+								</header>
+								<p>We present an approach to data fusion that combines the interpretability of structured probabilistic graphical models with the flexibility of neural networks. The proposed method, lightweight data fusion (LDF), emphasizes posterior analysis over latent variables using two types of information: primary data, which are well-characterized but with limited availability, and auxiliary data, readily available but lacking a well-characterized statistical relationship to the latent quantity of interest.  We demonstrate the LDF methodology on two challenging inference problems: (1) learning electrification rates in Rwanda from satellite imagery, high-level grid infrastructure, and other sources; and (2) inferring county-level homicide rates in the USA by integrating socio-economic data using a mixture model of multiple conjugate mappings.</p>
+								<ul class="actions">
+									<li><a href="https://arxiv.org/pdf/2011.10607.pdf" onclick=" trackPDFview('https://arxiv.org/pdf/2011.10607.pdf')" class="button special icon fa-download small">PDF</a></li>
+									<li><a href="javascript:showhide('paper2020ldf')" class="button small">Bibtex</a></li>
+								</ul>
+							</div>
+								<pre id="paper2020ldf" style="display:none;"><code>@misc{dean2020lightweight,
+  title={Lightweight Data Fusion with Conjugate Mappings}, 
+  author={Christopher L. Dean and Stephen J. Lee and Jason Pacheco and John W. Fisher III},
+  year={2020},
+  eprint={2011.10607},
+  archivePrefix={arXiv},
+  primaryClass={stat.ML}
+}</code></pre>
+						</div>
+						<div class="feature">
+							<div class="image"><img src="images/sm_im.png" alt="" /></div>
+							<div class="content">
+								<header>
+									<h4>Efficient MCMC Inference for Remote Sensing of Emission Sources</h4>
+									<p>S.M. Thesis, Massachusetts Institute of Technology (2015)</p>
+								</header>
+								<p>This thesis presents and analyzes an non-parametric MCMC-based inference procedure for identifying the number and properties of gaseous emission sources from measurements taken downwind of the emitters, subject to a specific atmospheric dispersion model.  Advised by <a href="http://people.csail.mit.edu/fisher/">John W. Fisher III</a>.</p>
+								<ul class="actions">
+									<li><a href="files/sm_thesis.pdf" onclick=" trackPDFview('http://people.csail.mit.edu/cdean/files/sm_thesis.pdf')" class="button special icon fa-download small">PDF</a></li>
+									<li><a href="javascript:showhide('thesis2')" class="button small">Bibtex</a></li>
+								</ul>
+							</div>
+								<pre id="thesis2" style="display:none;"><code>@mastersthesis{Dean2015,
+  author = {Dean, Christopher L.},
+  title = {Efficient MCMC inference for remote sensing of emission sources},
+  school = {Massachusetts Institute of Technology},
+  address = {Cambridge, MA},
+  type = {S.M.},
+  year = {2015},
+  month = {June}
+}</code></pre>
+						</div>
+						<div class="feature">
+							<div class="image"><img src="images/bs_im.png" alt="" /></div>
+							<div class="content">
+								<header>
+									<h4>The Value of Delayed Information in Tracking with Distributed Sensor Networks</h4>
+									<p>B.S. Honors Thesis, The Ohio State University (2012)</p>
+								</header>
+								<p>This thesis considers the value of "delayed" observations for object tracking with a variant of the extended Kalman filter where at each time-step a network of communication-constrained sensors can only integrate either one current measurement or one old measurement. Advised by <a href="http://www2.ece.ohio-state.edu/~ertine/">Emre Ertin</a>.</p>
+								<ul class="actions">
+									<li><a href="files/bs_thesis.pdf" onclick=" trackPDFview('http://people.csail.mit.edu/cdean/files/bs_thesis.pdf')" class="button special icon fa-download small">PDF</a></li>
+									<li><a href="javascript:showhide('thesis1')" class="button small">Bibtex</a></li>
+								</ul>
+							</div>
+							<pre id="thesis1" style="display:none;"><code>@mastersthesis{Dean2012,
+  author = {Dean, Christopher L.},
+  title = {The value of delayed information in tracking with distributed sensor networks},
+  school = {The Ohio State University},
+  address = {Columbus, OH},
+  type = {B.S.},
+  year = {2012},
+  month = {Dec}
+}</code></pre>
+						</div>
+						<div class="feature">
+							<div class="image"><img src="images/fie2011_im.png" alt="" /></div>
+							<div class="content">
+								<header>
+									<h4>Student Perspectives on Learning Through Developing Software for the Real World</h4>
+									<p>Christopher L. Dean, Thomas D. Lynch, Rajiv Ramnath<br />
+									Proceedings of 2011 IEEE Frontiers in Education Conference
+									</p>
+								</header>
+								<p>We examine several sources of experiential learning for their ability to bridge the gap between the computer science classroom and professional practice.  In particular, we compare internships and co-ops, senior capstone projects, and participation in long-term, real-world, student-led software development projects.  </p>
+								<ul class="actions">
+									<li><a href="files/fie2011.pdf" onclick=" trackPDFview('http://people.csail.mit.edu/cdean/files/fie2011.pdf')" class="button special icon fa-download small">PDF</a></li>
+									<li><a id="paper1but" href="javascript:showhide('paper1')" class="button small">Bibtex</a></li>
+								</ul>
+							</div>
+							<pre id="paper1" style="display:none;"><code>@inproceedings{Dean2011,
+  author={Dean, Christopher L. and Lynch, T.D. and Ramnath, R.},
+  booktitle={Frontiers in Education Conference (FIE), 2011},
+  title={Student perspectives on learning through developing software for the real world},
+  year={2011},
+  month={Oct},
+  pages={T3F-1-T3F-6},
+  doi={10.1109/FIE.2011.6142904}
+}</code></pre>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer id="footer">
+				<div class="container 75%">
+					<div class="row 200%">
+						<section class="6u 4u(medium) 3u(small) 12u$(xsmall)">
+							<h3>Links</h3>
+							<ul class="alt">
+								<li><a href="http://groups.csail.mit.edu/vision/sli/">SLI Group</a></li>
+								<li><a href="http://csail.mit.edu/">CSAIL</a></li>
+								<li><a href="http://www.mit.edu/">MIT</a></li>
+							</ul>
+						</section>
+						<section class="6u 8u(medium) 9u(small) 12u$(xsmall)">
+							<h3>Contact</h3>
+
+							<ul class="tabular">
+								<li>
+									<h3>Email</h3>
+									<img src="images/email.png" alt="" />
+								</li>
+								<li>
+									<h3>Address</h3>
+									32 Vassar Street, 32-D458<br>
+									Cambridge, MA 02139
+								</li>
+							</ul>
+						</section>
+					</div>
+					<ul class="copyright">
+						<li>&copy; 2021 Christopher L. Dean</li>
+						<li>Original Design: <a href="http://templated.co">TEMPLATED</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>
